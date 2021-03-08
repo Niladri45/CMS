@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- debug config -->
+<launch>
+	<copy file="manhattan.net.xml" />
+	<copy file="manhattan.rou2.xml" />
+	<copy file="manhattan.add.xml" />
+	<copy file="manhattan.poly.xml" />
+	<copy file="manhattan.sumo.cfg" type="config" />
+</launch>
+

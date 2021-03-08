@@ -1,0 +1,205 @@
+version 2
+run Slotted1Persistant-9-20200618-14:10:58-18991
+attr configname Slotted1Persistant
+attr datetime 20200618-14:10:58
+attr experiment Slotted1Persistant
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network FloodingNetwork
+attr processid 18991
+attr repetition 9
+attr replication #9
+attr resultdir results
+attr runnumber 9
+attr seedset 9
+param *.node[*].applType "\"Slotted1Persistant\""
+param **.debug false
+param **.coreDebug false
+param *.playgroundSizeX 3000m
+param *.playgroundSizeY 2500m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.obstacles.debug true
+param *.obstacles.obstacles "xmldoc(\"config.xml\", \"//AnalogueModel[@type='SimpleObstacleShadowing']/obstacles\")"
+param *.world.useTorus false
+param *.world.use2D false
+param *.manager.updateInterval 0.1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.moduleType "\"org.car2x.veins.nodes.Car\""
+param *.manager.moduleName "\"node\""
+param *.manager.autoShutdown true
+param *.manager.margin 25
+param *.manager.launchConfig "xmldoc(\"manhattan.launchd.xml\")"
+param *.vehicleInserter.numVehicles 150
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 100m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel true
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.rsu.applType "\"FloodingRSU\""
+param *.rsu.appl.headerLength 80bit
+param *.rsu[*].appl.debug false
+param *.rsu[*].appl.headerLength "88 bit"
+param *.rsu[*].appl.dataLengthBits "512 bit"
+param *.rsu[*].appl.sendBeacons false
+param *.rsu[*].appl.dataOnSch true
+param *.rsu[*].appl.sendData true
+param *.rsu.nic.phy80211p.useNoiseFloor true
+param *.rsu.nic.phy80211p.noiseFloor -98dBm
+param *.rsu.nic.phy80211p.minPowerLevel -110dBm
+param *.rsu.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.rsu.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.rsu.nic.phy80211p.sensitivity -89dBm
+param *.rsu.nic.mac1609_4.txPower 20mW
+param *.rsu.mobility.x 1420
+param *.rsu.mobility.y 1250
+param *.rsu.mobility.z 1.895
+param *.node[*].appl.debug false
+param *.node[*].appl.headerLength "88 bit"
+param *.node[*].appl.dataLengthBits "512 bit"
+param *.node[*].appl.sendBeacons true
+param *.node[*].appl.dataOnSch true
+param *.node[*].appl.sendData true
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].appl.beaconPriority 3
+param *.node[*].appl.dataPriority 2
+param *.node[*].appl.maxOffset 0.005s
+param *.node.appl.dataOnSch false
+param *.rsu.appl.dataOnSch false
+param *.node[*].veinsmobilityType.debug false
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 1.895
+
+scalar FloodingNetwork.node[142].appl generatedWSMs 0
+scalar FloodingNetwork.node[142].appl receivedWSMs 0
+scalar FloodingNetwork.node[142].appl generatedBSMs 89
+scalar FloodingNetwork.node[142].appl receivedBSMs 0
+scalar FloodingNetwork.node[142].appl generatedWSAs 0
+scalar FloodingNetwork.node[142].appl receivedWSAs 0
+scalar FloodingNetwork.node[142].appl #duplicates 0
+scalar FloodingNetwork.node[142].appl #numSent 0
+scalar FloodingNetwork.node[142].nic.phy80211p busyTime 0.0001752808988764
+scalar FloodingNetwork.node[142].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar FloodingNetwork.node[142].nic.mac1609_4 ReceivedBroadcasts 141
+scalar FloodingNetwork.node[142].nic.mac1609_4 SentPackets 89
+scalar FloodingNetwork.node[142].nic.mac1609_4 SentAcknowledgements 0
+scalar FloodingNetwork.node[142].nic.mac1609_4 RetriesExceeded 0
+scalar FloodingNetwork.node[142].nic.mac1609_4 SNIRLostPackets 9
+scalar FloodingNetwork.node[142].nic.mac1609_4 RXTXLostPackets 0
+scalar FloodingNetwork.node[142].nic.mac1609_4 TotalLostPackets 9
+scalar FloodingNetwork.node[142].nic.mac1609_4 DroppedPacketsInMac 0
+scalar FloodingNetwork.node[142].nic.mac1609_4 TooLittleTime 0
+scalar FloodingNetwork.node[142].nic.mac1609_4 TimesIntoBackoff 89
+scalar FloodingNetwork.node[142].nic.mac1609_4 SlotsBackoff 151
+scalar FloodingNetwork.node[142].nic.mac1609_4 NumInternalContention 0
+scalar FloodingNetwork.node[142].nic.mac1609_4 totalBusyTime 0.024945
+scalar FloodingNetwork.node[142].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar FloodingNetwork.node[142].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar FloodingNetwork.node[142].nic.mac1609_4 sentPackets:count 89
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar FloodingNetwork.node[142].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar FloodingNetwork.node[142].nic.mac1609_4 channelBusy:timeavg 0.0002802808988764
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar FloodingNetwork.node[142].veinsmobility startTime 1.7
+scalar FloodingNetwork.node[142].veinsmobility totalTime 88.9
+scalar FloodingNetwork.node[142].veinsmobility stopTime 90.7
+scalar FloodingNetwork.node[142].veinsmobility minSpeed 5.7640954710442
+scalar FloodingNetwork.node[142].veinsmobility maxSpeed 14.284258809015
+scalar FloodingNetwork.node[142].veinsmobility totalDistance 1157.522843601
+scalar FloodingNetwork.node[142].veinsmobility totalCO2Emission 282.50351998354
+scalar FloodingNetwork.node[128].appl generatedWSMs 0
+scalar FloodingNetwork.node[128].appl receivedWSMs 0
+scalar FloodingNetwork.node[128].appl generatedBSMs 97
+scalar FloodingNetwork.node[128].appl receivedBSMs 0
+scalar FloodingNetwork.node[128].appl generatedWSAs 0
+scalar FloodingNetwork.node[128].appl receivedWSAs 0
+scalar FloodingNetwork.node[128].appl #duplicates 0
+scalar FloodingNetwork.node[128].appl #numSent 0
+scalar FloodingNetwork.node[128].nic.phy80211p busyTime 0.00016957688338493
+scalar FloodingNetwork.node[128].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar FloodingNetwork.node[128].nic.mac1609_4 ReceivedBroadcasts 141
+scalar FloodingNetwork.node[128].nic.mac1609_4 SentPackets 97
+scalar FloodingNetwork.node[128].nic.mac1609_4 SentAcknowledgements 0
+scalar FloodingNetwork.node[128].nic.mac1609_4 RetriesExceeded 0
+scalar FloodingNetwork.node[128].nic.mac1609_4 SNIRLostPackets 17
+scalar FloodingNetwork.node[128].nic.mac1609_4 RXTXLostPackets 0
+scalar FloodingNetwork.node[128].nic.mac1609_4 TotalLostPackets 17
+scalar FloodingNetwork.node[128].nic.mac1609_4 DroppedPacketsInMac 0
+scalar FloodingNetwork.node[128].nic.mac1609_4 TooLittleTime 0
+scalar FloodingNetwork.node[128].nic.mac1609_4 TimesIntoBackoff 97
+scalar FloodingNetwork.node[128].nic.mac1609_4 SlotsBackoff 148
+scalar FloodingNetwork.node[128].nic.mac1609_4 NumInternalContention 0
+scalar FloodingNetwork.node[128].nic.mac1609_4 totalBusyTime 0.026617
+scalar FloodingNetwork.node[128].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar FloodingNetwork.node[128].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar FloodingNetwork.node[128].nic.mac1609_4 sentPackets:count 97
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar FloodingNetwork.node[128].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar FloodingNetwork.node[128].nic.mac1609_4 channelBusy:timeavg 0.00027468524251806
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar FloodingNetwork.node[128].veinsmobility startTime 1.2
+scalar FloodingNetwork.node[128].veinsmobility totalTime 96.8
+scalar FloodingNetwork.node[128].veinsmobility stopTime 98.1
+scalar FloodingNetwork.node[128].veinsmobility minSpeed 5.820392533737
+scalar FloodingNetwork.node[128].veinsmobility maxSpeed 13.364881093317
+scalar FloodingNetwork.node[128].veinsmobility totalDistance 1144.2604817141
+scalar FloodingNetwork.node[128].veinsmobility totalCO2Emission 258.66963684391
+scalar FloodingNetwork.node[40].appl generatedWSMs 0
+scalar FloodingNetwork.node[40].appl receivedWSMs 0
+scalar FloodingNetwork.node[40].appl generatedBSMs 97
+scalar FloodingNetwork.node[40].appl receivedBSMs 0
+scalar FloodingNetwork.node[40].appl generatedWSAs 0
+scalar FloodingNetwork.node[40].appl receivedWSAs 0
+scalar FloodingNetwork.node[40].appl #duplicates 0
+scalar FloodingNetwork.node[40].appl #numSent 0
+scalar FloodingNetwork.node[40].nic.phy80211p busyTime 0.00017868312757202
+scalar FloodingNetwork.node[40].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar FloodingNetwork.node[40].nic.mac1609_4 ReceivedBroadcasts 149
+scalar FloodingNetwork.node[40].nic.mac1609_4 SentPackets 97
+scalar FloodingNetwork.node[40].nic.mac1609_4 SentAcknowledgements 0
+scalar FloodingNetwork.node[40].nic.mac1609_4 RetriesExceeded 0
+scalar FloodingNetwork.node[40].nic.mac1609_4 SNIRLostPackets 18
+scalar FloodingNetwork.node[40].nic.mac1609_4 RXTXLostPackets 0
+scalar FloodingNetwork.node[40].nic.mac1609_4 TotalLostPackets 18
+scalar FloodingNetwork.node[40].nic.mac1609_4 DroppedPacketsInMac 0
+scalar FloodingNetwork.node[40].nic.mac1609_4 TooLittleTime 0
+scalar FloodingNetwork.node[40].nic.mac1609_4 TimesIntoBackoff 97
+scalar FloodingNetwork.node[40].nic.mac1609_4 SlotsBackoff 149
+scalar FloodingNetwork.node[40].nic.mac1609_4 NumInternalContention 0
+scalar FloodingNetwork.node[40].nic.mac1609_4 totalBusyTime 0.027553
+scalar FloodingNetwork.node[40].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar FloodingNetwork.node[40].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar FloodingNetwork.node[40].nic.mac1609_4 sentPackets:count 97
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar FloodingNetwork.node[40].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar FloodingNetwork.node[40].nic.mac1609_4 channelBusy:timeavg 0.0002834670781893
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar FloodingNetwork.node[40].veinsmobility startTime 1.2
+scalar FloodingNetwork.node[40].veinsmobility totalTime 97.1
+scalar FloodingNetwork.node[40].veinsmobility stopTime 98.4
+scalar FloodingNetwork.node[40].veinsmobility minSpeed 5.7304057710386
+scalar FloodingNetwork.node[40].veinsmobility maxSpeed 14.882625801602
+scalar FloodingNetwork.node[40].veinsmobility totalDistance 1287.2849108672
+scalar FloodingNetwork.node[40].veinsmobility totalCO2Emission 323.30992545273
+

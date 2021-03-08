@@ -1,0 +1,3 @@
+package simpleflooding;
+
+@license(LGPL);
